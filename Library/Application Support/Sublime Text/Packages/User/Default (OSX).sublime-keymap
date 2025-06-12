@@ -1,0 +1,27 @@
+[
+	{ "keys": ["h"], "command": "move", "args": {"by": "characters", "forward": false}, "context":
+		[
+			{ "key": "maudelaire_mode" }
+		] 
+	},
+	{ "keys": ["j"], "command": "move", "args": {"by": "lines", "forward": true}, "context":
+		[
+			{ "key": "maudelaire_mode" }
+		] 
+	},
+	{ "keys": ["k"], "command": "move", "args": {"by": "lines", "forward": false}, "context":
+		[
+			{ "key": "maudelaire_mode" }
+		] 
+	},
+	{ "keys": ["l"], "command": "move", "args": {"by": "characters", "forward": true}, "context":
+		[
+			{ "key": "maudelaire_mode" }
+		] 
+	},
+	{ "keys": ["x"], "command": "expand_selection", "args": {"to": "line"}, "context":
+		[
+			{ "key": "maudelaire_mode" }
+		] 
+	},
+]

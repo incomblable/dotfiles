@@ -1,0 +1,14 @@
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+	"clients": {
+		"tinymist": {
+			"enabled": true,
+			"command": ["/opt/homebrew/bin/tinymist"],
+			"selector": "text.typst",
+			"initializationOptions": {
+				"exportPdf": "never",
+				"typstExtraArgs": [],
+			}
+		}
+	}
+}

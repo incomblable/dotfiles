@@ -1,0 +1,42 @@
+cask_args appdir: "~/Applications"
+
+brew "bandcamp-dl"
+brew "fzf"
+brew "git"
+brew "jq"
+brew "lazygit"
+brew "lima"
+brew "mas"
+brew "n"
+brew "opam"
+brew "pandoc"
+brew "pyenv"
+brew "stow"
+brew "typewritten"
+brew "tmux"
+brew "tinymist"
+brew "yt-dlp"
+
+cask "affinity-designer"
+cask "affinity-photo"
+cask "alfred"
+cask "altserver"
+cask "dash"
+cask "discord"
+cask "font-ibm-plex-mono"
+cask "hammerspoon"
+cask "monitorcontrol"
+cask "mos", args: { appdir: "/Applications" }
+cask "sketch"
+cask "swift-shift"
+cask "sublime-text"
+cask "sublime-merge"
+cask "telegram"
+cask "visual-studio-code"
+cask "zotero"
+
+mas "AdGuard for Safari", id: 1440147259
+#mas "Bitwarden", id: 1352778147
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "System Color Picker", id: 1545870783

@@ -1,0 +1,5 @@
+# Dotfiles
+
+```sh
+stow -R .
+```

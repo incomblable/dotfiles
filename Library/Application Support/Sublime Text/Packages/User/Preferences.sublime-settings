@@ -1,0 +1,17 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"font_face": "IBM Plex Mono",
+	"font_size": 14,
+	"default_font_size": 15,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
+	"color_scheme": "auto",
+	"dark_color_scheme": "Mariana.sublime-color-scheme",
+	"light_color_scheme": "Breakers.sublime-color-scheme",
+	"theme": "Adaptive.sublime-theme",
+	"sidebar_on_right": true,
+}

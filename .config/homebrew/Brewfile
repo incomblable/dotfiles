@@ -15,6 +15,7 @@ brew "stow"
 brew "tinymist"
 brew "tmux"
 brew "typewritten"
+brew "typst"
 brew "yt-dlp"
 
 cask "affinity-designer"

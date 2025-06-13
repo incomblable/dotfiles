@@ -33,7 +33,6 @@ cask "swift-shift"
 cask "sublime-text"
 cask "sublime-merge"
 cask "telegram"
-cask "visual-studio-code"
 cask "zotero"
 
 mas "AdGuard for Safari", id: 1440147259

@@ -1,5 +1,7 @@
 cask_args appdir: "~/Applications"
 
+brew "arm-none-eabi-gcc"
+brew "arm-none-eabi-gdb"
 brew "bandcamp-dl"
 brew "fzf"
 brew "git"
@@ -11,6 +13,7 @@ brew "n"
 brew "opam"
 brew "pandoc"
 brew "pyenv"
+brew "qemu"
 brew "stow"
 brew "tinymist"
 brew "tmux"
@@ -36,7 +39,6 @@ cask "telegram"
 cask "zotero"
 
 mas "AdGuard for Safari", id: 1440147259
-#mas "Bitwarden", id: 1352778147
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "System Color Picker", id: 1545870783

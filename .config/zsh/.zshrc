@@ -6,6 +6,12 @@ fi
 autoload -Uz compinit
 compinit
 
+# --- [[ VSCode ]] ---
+if command -v codium &>/dev/null || command -v code &>/dev/null ; then
+	[[ $(defaults read com.vscodium ApplePressAndHoldEnabled) != 0 ]] &&
+		defaults write com.vscodium ApplePressAndHoldEnabled -bool false
+fi
+
 # --- [[ Go ]] ---
 export GOPATH="$XDG_CACHE_HOME/go"
 export PATH="$GOPATH/bin:$PATH"
@@ -14,7 +20,8 @@ export PATH="$GOPATH/bin:$PATH"
 export PATH="$PATH:$HOME/.local/bin"
 
 # --- [[ Theming ]] ---
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt typewritten
 
 # --- [[ Aliases ]] ---

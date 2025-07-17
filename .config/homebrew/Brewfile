@@ -1,0 +1,35 @@
+cask_args appdir: "~/Applications"
+
+brew "bandcamp-dl"
+brew "fzf"
+brew "git"
+brew "go"
+brew "lazygit"
+brew "lima"
+brew "mas"
+brew "neovim"
+brew "qemu"
+brew "stow"
+brew "tmux"
+brew "typewritten"
+brew "yt-dlp"
+
+cask "affinity-designer"
+cask "affinity-photo"
+cask "alfred"
+cask "altserver"
+cask "discord"
+cask "font-iosevka-ss15"
+cask "hammerspoon"
+cask "monitorcontrol"
+cask "mos", args: { appdir: "/Applications" }
+cask "sketch"
+cask "swift-shift"
+cask "telegram"
+cask "vlc"
+cask "vscodium"
+
+mas "AdGuard for Safari", id: 1440147259
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "System Color Picker", id: 1545870783

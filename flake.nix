@@ -5,6 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:nix-darwin/nix-darwin/master";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    pre-commit-hooks.url = "github:cachix/git-hooks.nix";
+    pre-commit-hooks.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   outputs =
@@ -12,6 +14,7 @@
       self,
       nix-darwin,
       nixpkgs,
+      pre-commit-hooks,
     }:
     let
       forAllSystems = nixpkgs.lib.genAttrs [
@@ -32,6 +35,39 @@
         };
       };
 
-      formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.nixfmt-tree);
+      checks = forAllSystems (system: {
+        pre-commit-check = inputs.pre-commit-hooks.lib.${system}.run {
+          src = ./.;
+          hooks = {
+            actionlint.enable = true;
+            deadnix.enable = true;
+            flake-checker.enable = true;
+            nixfmt-rfc-style.enable = true;
+            shfmt.enable = true;
+          };
+        };
+      });
+
+      devShells = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+        in
+        {
+          default = pkgs.mkShell {
+            inherit (self.checks.${system}.pre-commit-check) shellHook;
+
+            name = "machines";
+
+            buildInputs =
+              with pkgs;
+              [
+                nixd
+              ]
+              ++ self.checks.${system}.pre-commit-check.enabledPackages;
+          };
+        }
+      );
+
     };
 }

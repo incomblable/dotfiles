@@ -1,3 +1,5 @@
 .DS_Store
+.direnv
+.pre-commit-config.yaml
 *.sublime-workspace
 result

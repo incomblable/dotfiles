@@ -7,7 +7,7 @@ autoload -Uz compinit
 compinit
 
 # --- [[ VSCode ]] ---
-if command -v codium &>/dev/null || command -v code &>/dev/null ; then
+if command -v codium &>/dev/null || command -v code &>/dev/null; then
 	[[ $(defaults read com.vscodium ApplePressAndHoldEnabled) != 0 ]] &&
 		defaults write com.vscodium ApplePressAndHoldEnabled -bool false
 fi

@@ -1,4 +1,5 @@
 export DOTS="$HOME/Repositories/dotfiles"
+export EDITOR="vim"
 export REPOS="$HOME/Repositories"
 export XDG_CACHE_HOME="$HOME/Library/Caches"
 export XDG_CONFIG_HOME="$HOME/.config"

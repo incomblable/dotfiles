@@ -24,7 +24,7 @@
         "x86_64-linux"
       ];
 
-      lib = nixpkgs.lib.extend (_: _: { } // (import ./nix/lib.nix { inherit nixpkgs; }));
+      lib = nixpkgs.lib.extend (_: _: { } // (import ./.config/nix/lib.nix { inherit nixpkgs; }));
     in
     {
       darwinConfigurations."odinoko" = lib.mkSystem nix-darwin.lib.darwinSystem {

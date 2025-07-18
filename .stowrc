@@ -5,5 +5,7 @@
 --ignore=.pre-commit-config.yaml
 --ignore=.stowrc
 --ignore=assets
+--ignore=flake.nix
+--ignore=flake.lock
 --ignore=vscode
 --ignore=dotfiles.sublime-workspace

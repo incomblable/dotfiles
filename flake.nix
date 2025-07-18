@@ -36,12 +36,13 @@
       };
 
       checks = forAllSystems (system: {
-        pre-commit-check = inputs.pre-commit-hooks.lib.${system}.run {
+        pre-commit-check = pre-commit-hooks.lib.${system}.run {
           src = ./.;
           hooks = {
             actionlint.enable = true;
             deadnix.enable = true;
             flake-checker.enable = true;
+            mdformat.enable = true;
             nixfmt-rfc-style.enable = true;
             shfmt.enable = true;
           };

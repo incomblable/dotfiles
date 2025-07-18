@@ -10,6 +10,9 @@ compinit
 if command -v codium &>/dev/null || command -v code &>/dev/null; then
 	[[ $(defaults read com.vscodium ApplePressAndHoldEnabled) != 0 ]] &&
 		defaults write com.vscodium ApplePressAndHoldEnabled -bool false
+
+	[[ $(defaults read com.microsoft.VSCode ApplePressAndHoldEnabled) != 0 ]] &&
+		defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 fi
 
 # --- [[ Ada ]] ---

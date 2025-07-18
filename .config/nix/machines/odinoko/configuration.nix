@@ -42,6 +42,7 @@
       "telegram"
       "transmission"
       "vlc"
+      "visual-studio-code"
       "vscodium"
     ];
 

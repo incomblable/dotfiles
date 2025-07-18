@@ -1,6 +1,8 @@
 --target=$HOME
 --no-folding
+--ignore=.direnv
 --ignore=.DS_Store
+--ignore=.pre-commit-config.yaml
 --ignore=.stowrc
 --ignore=assets
 --ignore=vscode

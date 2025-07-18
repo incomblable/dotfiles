@@ -7,6 +7,7 @@
   environment.systemPackages = with pkgs; [
     ffmpeg
     git
+    go
     jq
     lima
     mas

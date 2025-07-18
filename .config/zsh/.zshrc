@@ -12,6 +12,9 @@ if command -v codium &>/dev/null || command -v code &>/dev/null; then
 		defaults write com.vscodium ApplePressAndHoldEnabled -bool false
 fi
 
+# --- [[ Ada ]] ---
+export PATH="$PATH:$HOME/.alire/bin"
+
 # --- [[ Go ]] ---
 export GOPATH="$XDG_CACHE_HOME/go"
 export PATH="$GOPATH/bin:$PATH"

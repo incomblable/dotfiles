@@ -58,7 +58,7 @@
           default = pkgs.mkShell {
             inherit (self.checks.${system}.pre-commit-check) shellHook;
 
-            name = "machines";
+            name = "dotfiles";
 
             buildInputs =
               with pkgs;

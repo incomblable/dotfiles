@@ -5,6 +5,8 @@
 }:
 {
   environment.systemPackages = with pkgs; [
+    colima
+    docker
     ffmpeg
     git
     go

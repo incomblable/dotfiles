@@ -37,6 +37,7 @@
       "altserver"
       "discord"
       "font-iosevka-ss15"
+      "font-ibm-plex-mono"
       "hammerspoon"
       "monitorcontrol"
       "mos"
